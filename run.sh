@@ -1,8 +1,7 @@
 #!/bin/bash
 
 export TARGET=manylinux2014-aarch64
-#
-export TARGET=manylinux2014-x64
+#export TARGET=manylinux2014-x64
 
 docker pull dockcross/$TARGET:latest
 docker run --rm dockcross/$TARGET:latest > dockcross.$TARGET
